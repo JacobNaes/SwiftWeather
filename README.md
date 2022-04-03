@@ -39,7 +39,7 @@ extension APIManager.APIEndPoint {
 }
 ```
 
-# Demo
+---
 
 Light Mode                                                         |  Dark Mode                                                       
 :----------------------------------------------------------------:|:--------------------------------------------------------------------:
@@ -58,6 +58,7 @@ Cloudy                                                                 |  Rainy
 [<img src="README_IMAGES/cloudyWeather.jpeg" width="250"/>](image.png) | [<img src="README_IMAGES/rainyWeather.jpeg" width="250"/>](image.png)
 
 
+---
 
 ## Background of App Development
 The reason why I created this app was mostly for educational purposes, to improve my app architecture, core data, swiftUI design, and networking skills. 
@@ -69,5 +70,3 @@ This app uses the new async/await features in swift in place of escaping complet
 There are several attributes that are present in the core data model and the weather domain model that are not used. This is purposeful and they are left there for future use.
 
 The UI design is based off Apple's own weather app and the dynamic background is a modified version of a [Hacking With Swift](https://www.hackingwithswift.com) project. 
-
-
