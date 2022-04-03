@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CurrentWeatherMO" representedClassName="CurrentWeatherMO" syncable="YES" codeGenerationType="class">
+        <attribute name="clouds" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="date_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dewPoint" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="feelsLike" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sunrise_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sunset_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="temp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timeOffset" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uvi" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="visibility" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windAngle" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windGust" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windSpeed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="condition_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherConditionMO" inverseName="current" inverseEntity="WeatherConditionMO"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherMO" inverseName="current_" inverseEntity="WeatherMO"/>
+    </entity>
+    <entity name="DayWeatherMO" representedClassName="DayWeatherMO" syncable="YES" codeGenerationType="class">
+        <attribute name="clouds" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="day_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dewPoint" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="feelsLikeTempDay" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="humidity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="moonPhase" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="moonrise_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="moonset_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="precipitationChance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rain" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="snow" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sunrise_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="sunset_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="tempMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="tempMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timeOffset" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uvi" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windAngle" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windGust" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windSpeed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="condition_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherConditionMO" inverseName="day" inverseEntity="WeatherConditionMO"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherMO" inverseName="daily_" inverseEntity="WeatherMO"/>
+    </entity>
+    <entity name="HourWeatherMO" representedClassName="HourWeatherMO" syncable="YES" codeGenerationType="class">
+        <attribute name="clouds" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="daySunrise_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="daySunset_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dewPoint" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="feelsLike" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="hour_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="humidity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="isDayTime" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="precipitationChance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pressure" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="temp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timeOffset" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="uvi" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="visibility" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windAngle" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windGust" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="windSpeed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="condition_" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherConditionMO" inverseName="hour" inverseEntity="WeatherConditionMO"/>
+        <relationship name="weather" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WeatherMO" inverseName="hourly_" inverseEntity="WeatherMO"/>
+    </entity>
+    <entity name="WeatherConditionMO" representedClassName="WeatherConditionMO" syncable="YES" codeGenerationType="class">
+        <attribute name="code_" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="detail_" optional="YES" attributeType="String"/>
+        <attribute name="isDay" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="main_" optional="YES" attributeType="String"/>
+        <attribute name="time_" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="timeOffset" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="current" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CurrentWeatherMO" inverseName="condition_" inverseEntity="CurrentWeatherMO"/>
+        <relationship name="day" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="DayWeatherMO" inverseName="condition_" inverseEntity="DayWeatherMO"/>
+        <relationship name="hour" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="HourWeatherMO" inverseName="condition_" inverseEntity="HourWeatherMO"/>
+    </entity>
+    <entity name="WeatherMO" representedClassName="WeatherMO" syncable="YES" codeGenerationType="class">
+        <attribute name="isUserWeather" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="locationCountry_" optional="YES" attributeType="String"/>
+        <attribute name="locationID_" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="locationName_" optional="YES" attributeType="String"/>
+        <attribute name="locationRegion_" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timeOffset" optional="YES" attributeType="Integer 64" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="current_" maxCount="1" deletionRule="Cascade" destinationEntity="CurrentWeatherMO" inverseName="weather" inverseEntity="CurrentWeatherMO"/>
+        <relationship name="daily_" toMany="YES" deletionRule="Cascade" destinationEntity="DayWeatherMO" inverseName="weather" inverseEntity="DayWeatherMO"/>
+        <relationship name="hourly_" toMany="YES" deletionRule="Cascade" destinationEntity="HourWeatherMO" inverseName="weather" inverseEntity="HourWeatherMO"/>
+    </entity>
+    <elements>
+        <element name="CurrentWeatherMO" positionX="-36" positionY="9" width="128" height="14"/>
+        <element name="DayWeatherMO" positionX="-54" positionY="-9" width="128" height="374"/>
+        <element name="HourWeatherMO" positionX="-63" positionY="-18" width="128" height="14"/>
+        <element name="WeatherConditionMO" positionX="0" positionY="45" width="128" height="164"/>
+        <element name="WeatherMO" positionX="-18" positionY="27" width="128" height="14"/>
+    </elements>
+</model>

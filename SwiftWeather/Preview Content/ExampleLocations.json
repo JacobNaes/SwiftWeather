@@ -1,0 +1,92 @@
+[
+   {
+      "id": 919043,
+      "name": "Sheung Wan",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.28,
+      "lon": 114.15,
+      "url": "sheung-wan-hong-kong"
+   },
+   {
+      "id": 918243,
+      "name": "Central District",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.28,
+      "lon": 114.15,
+      "url": "central-district-hong-kong"
+   },
+   {
+      "id": 918683,
+      "name": "Mid Levels",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.28,
+      "lon": 114.15,
+      "url": "mid-levels-hong-kong"
+   },
+   {
+      "id": 918314,
+      "name": "Chung Wan",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.28,
+      "lon": 114.15,
+      "url": "chung-wan-hong-kong"
+   },
+   {
+      "id": 918295,
+      "name": "Choong Wan",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.28,
+      "lon": 114.15,
+      "url": "choong-wan-hong-kong"
+   },
+   {
+      "id": 918425,
+      "name": "Hong Kong",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.28,
+      "lon": 114.15,
+      "url": "hong-kong-hong-kong"
+   },
+   {
+      "id": 919149,
+      "name": "Tai Ping Shan",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.28,
+      "lon": 114.15,
+      "url": "tai-ping-shan-hong-kong"
+   },
+   {
+      "id": 919346,
+      "name": "Victoria",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.29,
+      "lon": 114.14,
+      "url": "victoria-hong-kong"
+   },
+   {
+      "id": 918983,
+      "name": "Sheh Tong Tsui",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.28,
+      "lon": 114.13,
+      "url": "sheh-tong-tsui-hong-kong"
+   },
+   {
+      "id": 918886,
+      "name": "Sai Ying Pun",
+      "region": "",
+      "country": "Hong Kong",
+      "lat": 22.28,
+      "lon": 114.13,
+      "url": "sai-ying-pun-hong-kong"
+   }
+]
